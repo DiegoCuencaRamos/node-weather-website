@@ -5,7 +5,7 @@ const msgData = document.querySelector('#msgData')
 
 
 const fetchWeather = (address) => {
-    const url = `http://localhost:3000/weather?address=${address}`
+    const url = `/weather?address=${address}`
     fetch(url)
         .then(res => res.json())
         .then(body => {
